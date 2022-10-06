@@ -1,0 +1,46 @@
+.reservation-list-date {
+  color: rgb(86, 84, 84);
+  margin: 0;
+}
+
+.reservation-list-view-details {
+  color: red;
+}
+
+.reservation-list-grid-container {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reservation-list-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 30rem) {
+  .reservation-list-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .reservation-list-name,
+  .reservation-list-date,
+  .reservation-list-view-details {
+    display: inline-block;
+  }
+
+  .reservation-list-name {
+    text-align: left;
+  }
+
+  .reservation-list-date {
+    text-align: center;
+  }
+
+  .reservation-list-view-details {
+    text-align: right;
+  }
+}

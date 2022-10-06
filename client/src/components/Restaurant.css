@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.restaurant-name {
+  margin-top: 0;
+  text-align: center;
+}
+.restaurant-description {
+  margin-bottom: 2rem;
+}
+
+.restaurant-image {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  .restaurant-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .restaurant-name {
+    text-align: left;
+  }
+}
